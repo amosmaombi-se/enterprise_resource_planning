@@ -113,7 +113,7 @@
                                 </div>   
                               
                                 <div class="col-md-4">
-                                    <input type="text" placeholder="Salary" class="form-control" name="salary" id="salary" value="{{ old('salary') }}" required class="@error('salary') is-invalid @enderror">
+                                    <input type="text" placeholder="Salary" class="form-control transaction_amount" name="salary" id="salary" value="{{ old('salary') }}" required class="@error('salary') is-invalid @enderror">
                                     @error('salary')
                                     <span class="text text-danger">{{ $message }}</span>
                                     @enderror

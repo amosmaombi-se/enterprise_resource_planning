@@ -1,3 +1,5 @@
+
+
 <div class="leftbar-tab-menu">
     <div class="main-icon-menu">
         <a href="../crm/crm-index.html" class="logo logo-metrica d-block text-center">
@@ -10,7 +12,7 @@
                 <i data-feather="pie-chart" class="align-self-center menu-icon icon-dual"></i>
             </a><!--end MetricaCRM--> 
 
-            <a href="#MetricaStaff" class="nav-link" data-toggle="tooltip-custom" data-placement="right" title="" data-original-title="Apps" data-trigger="hover">
+            <a href="#MetricaStaff" class="nav-link" data-toggle="tooltip-custom" data-placement="right" title="" data-original-title="HR" data-trigger="hover">
                 <i data-feather="grid" class="align-self-center menu-icon icon-dual"></i>
             </a><!--end MetricaApps-->
 
@@ -75,7 +77,7 @@
                             <li><a href="{{ route('employees') }}">All Staff</a></li>  
                         </ul>            
                     </li><!--end nav-item--> 
-                    <li class="nav-item"><a class="nav-link" href="../hospital/leaves.html">Leaves</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('leaves') }}">Leaves</a></li>
                     <li class="nav-item"><a class="nav-link" href="../hospital/holidays.html">Holidays</a></li>
                     <li class="nav-item"><a class="nav-link" href="../hospital/attendance.html">Attendance</a></li>                            
                 </ul>

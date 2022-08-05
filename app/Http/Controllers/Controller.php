@@ -55,6 +55,10 @@ class Controller extends BaseController
             $valid = array($country_name, $valid_number);
             return $valid;
         }
-    
     }
+
+    public function remove_comma($string_number) {
+        return trim(str_replace(',', '', $string_number));
+    }
+
 }
