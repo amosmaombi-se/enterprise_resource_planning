@@ -4,6 +4,7 @@ namespace App\Http\Controllers\HumanResource;
 use App\Http\Controllers\Controller;
 use \App\Models\User; 
 use \App\Models\Leave; 
+use \App\Models\HumanResource\Holidays;
 use Illuminate\Support\Str;
 use DB;
 use Auth;
@@ -178,7 +179,13 @@ class HumanResourceController extends Controller
             $leave->delete();
             return redirect('leaves')->with('success', 'Leave deleted successfully');
         }
-     
+    }
+
+
+    public function holidays()
+    {
+        $this->data['holidays'] = Holidays::latest()->get();
+        return view('humanResource.holidays.index',$this->data);  
     }
 
 

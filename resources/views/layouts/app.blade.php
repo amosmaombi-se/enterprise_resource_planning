@@ -9,12 +9,21 @@
         <meta content="" name="author" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <link rel="shortcut icon" href="{!! asset('backend/assets/images/favicon.ico') !!}">
+
+        <link href="{!! asset('plugins/fullcalendar/packages/core/main.css') !!}" rel="stylesheet" />
+        <link href="{!! asset('plugins/fullcalendar/packages/daygrid/main.css') !!}" rel="stylesheet" />
+        <link href="{!! asset('plugins/fullcalendar/packages/bootstrap/main.css') !!}" rel="stylesheet" />
+        <link href="{!! asset('plugins/fullcalendar/packages/timegrid/main.css') !!}" rel="stylesheet" />
+        <link href="{!! asset('plugins/fullcalendar/packages/list/main.css') !!}" rel="stylesheet" />
+        
         <link href="{!! asset('backend/assets/css/bootstrap.min.css') !!}" rel="stylesheet" type="text/css" />
         <link href="{!! asset('backend/assets/css/jquery-ui.min.css') !!}" rel="stylesheet">
         <link href="{!! asset('backend/assets/css/icons.min.css') !!}" rel="stylesheet" type="text/css" />
         <link href="{!! asset('backend/assets/css/metisMenu.min.css') !!}" rel="stylesheet" type="text/css" />
         <link href="{!! asset('backend/assets/css/app.min.css') !!}" rel="stylesheet" type="text/css" />
         <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.0/css/toastr.css" rel="stylesheet" />
+
+     
     </head>
 
     <body>
@@ -44,6 +53,15 @@
         <script src="{!! asset('backend/assets/pages/jquery.crm_dashboard.init.js') !!}"></script> 
         <script src="{!! asset('backend/assets/js/thousandth/thousands.js') !!}"></script>
         <script src="{!! asset('backend/assets/js/app.js') !!}"></script>
+
+        <script src="{!! asset('backend/plugins/moment/moment.js') !!} "></script>
+        <script src="{!! asset('backend/plugins/fullcalendar/packages/core/main.js') !!}"></script>
+        <script src="{!! asset('backend/plugins/fullcalendar/packages/daygrid/main.js') !!} "></script>
+        <script src="{!! asset('backend/plugins/fullcalendar/packages/timegrid/main.js') !!}"></script>
+        <script src="{!! asset('backend/plugins/fullcalendar/packages/interaction/main.js') !!}"></script>
+        <script src="{!! asset('backend/plugins/fullcalendar/packages/list/main.js') !!}"></script>
+        <script src="{!! asset('backend/assets/pages/jquery.calendar.js') !!}"></script>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
         <script>
             $(document).ready(function() {

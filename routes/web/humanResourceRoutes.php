@@ -21,4 +21,8 @@ Route::get('/edit-leave/{uuid}', [HumanResourceController::class, 'editLeave'])-
 Route::get('/delete-leave/{uuid}', [HumanResourceController::class, 'deleteLeave'])->name('delete-leve');  
 Route::post('/update-leave', [HumanResourceController::class, 'updateLeave'])->name('update-leave'); 
 
+// Holidays & events
+
+Route::get('/holidays', [HumanResourceController::class, 'holidays'])->name('holidays');
+
 

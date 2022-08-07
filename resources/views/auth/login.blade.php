@@ -40,7 +40,8 @@
                                         <div class="form-group">
                                             <label for="email">Email</label>
                                             <div class="input-group mb-3">
-                                                <input type="text" class="form-control" name="email" id="email" placeholder="Enter Email"  required class="@error('email') is-invalid @enderror">
+                                                <input type="text" class="form-control" name="email" id="email" placeholder="Enter Email"  required 
+                                                class="@error('email') is-invalid @enderror">
                                             </div>  
                                             @error('email')
                                               <span class="text text-danger">{{ $message }}</span>
@@ -50,8 +51,8 @@
                                         <div class="form-group">
                                             <label for="userpassword">Password</label>                                            
                                             <div class="input-group mb-3"> 
-                                                                                                      
-                                                <input type="password" class="form-control" name="password" placeholder="Enter password" required class="@error('password') is-invalid @enderror">
+                                                <input type="password" class="form-control" name="password" placeholder="Enter password" required 
+                                                class="@error('password') is-invalid @enderror">
                                             </div> 
                                             @error('password')
                                               <span class="text text-danger">{{ $message }}</span>

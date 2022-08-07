@@ -18,10 +18,10 @@ class AuthController extends Controller
     public function userLogin()
     {   
         $credentials = request()->validate([
-			'email' => 'required|string',
-          //  'email'    =>  'required|email|string|exists:users,email',
-            'password' => 'string|password',
+            'email'    =>  'required|email|string|exists:users,email',
+            'password' => 'required|string',
         ]);
+
 
         if(!Auth::attempt($credentials)){
             return redirect('/')->with('error', 'Wrong username or password');

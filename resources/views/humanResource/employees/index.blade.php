@@ -30,6 +30,7 @@
                                         <table id="datatable" class="table">
                                             <thead class="thead-light">
                                             <tr>
+                                                <th>#</th>
                                                 <th>Member Name</th>
                                                 <th>Age</th>
                                                 <th>NIN</th>                                                    
@@ -43,8 +44,9 @@
         
                                             <tbody>
                                            @if(isset($users))
-                                            @foreach( $users as $user )
+                                            @foreach( $users as $key => $user)
                                             <tr>
+                                                <td><?= $key+1 ?></td>
                                                 <td>
                                                 <img src="{!! asset('backend/assets/images/users/user-10.jpg') !!}" alt=""
                                                  class="thumb-sm rounded-circle mr-2"><?= $user->name() ?></td>

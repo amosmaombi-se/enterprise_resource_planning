@@ -78,7 +78,7 @@
                         </ul>            
                     </li><!--end nav-item--> 
                     <li class="nav-item"><a class="nav-link" href="{{ route('leaves') }}">Leaves</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../hospital/holidays.html">Holidays</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('holidays') }}">Holidays</a></li>
                     <li class="nav-item"><a class="nav-link" href="../hospital/attendance.html">Attendance</a></li>                            
                 </ul>
             </div>
