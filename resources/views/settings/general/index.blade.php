@@ -39,7 +39,7 @@
                             <div class="media p-3  align-items-center">                                                
                                 <img src="{!! asset('backend/assets/images/widgets/project2.jpg') !!}" alt="user" class="rounded-circle thumb-xl">                                        
                                 <div class="media-body ml-3 align-self-center">
-                                    <h5 class="pro-title">National Insurance</h5>
+                                    <h5 class="pro-title">Permissions</h5>
                                     <p class="mb-2 text-muted">NationalInsurance@example.com</p> 
                                 </div>
                             </div>                                    
